@@ -1,0 +1,833 @@
+/*CSS document*/
+
+/*Insert global rules here - rules that apply for all pages on your site and all device sizes. This could be text color, font type, font-sizes, margin on elements */
+
+/*COMMENTS WITH CAPITAL LETTERS ARE EASY TO SPOT, SO USE THEM FOR HEADINGS FOR OVERVIEW. IT IS A GOOD IDEA TO HAVE A HEADING FOR YOUR HEADER, NAVIGATION, MAIN AND FOOTER. SEE EXAMPLE BELOW*/
+
+
+/*HEADER*/
+
+/* example where you target the h1 inside the header tag and give it a color and a size */
+
+
+body{
+ font-family: 'Merriweather', serif;   
+}
+/*Main*/
+
+/* example to be deleted*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+}
+
+footer {
+    margin: auto;
+    background-color: #f1f1f1;
+    height: auto;
+    margin-top: 80px;
+}
+
+footer h2 {
+    margin-bottom: 30px;
+}
+
+.forside {
+    margin: 0px;
+    background-image: url(../images/wood_t.png);
+    background-size: 180vh vh200;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+
+}
+ 
+.navbar-item a {
+    text-decoration: none;
+    color: white;
+    transition: .5s ease;
+}
+
+.navbar-item a:hover {
+    transform: scale(1.1);
+    color: #EA922E;
+}
+
+.navbarrest {
+    background-image: url(../images/wood_navbar_m_120px.png);
+    background-size: 100% 120px; 
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+	height: 120px;
+}
+
+header h1 {
+    color: white;
+}
+
+.title {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
+ 
+.navbar {
+    display: none;
+} 
+
+.products-main-container {
+    display: none;
+}
+
+ 
+
+.navbarphone {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-image: url(../images/wood_navbar_m.png);
+    background-size: cover;
+    z-index: 10;
+
+}
+
+
+
+.navbarphone-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    flex: 25%;
+    margin-top: 15px;
+}
+
+.navbarphone-items p {
+    margin-top: 10px;
+    margin-bottom: 26px;
+    color: white;
+}
+
+.navbarphone-items a {
+    text-decoration: none;
+}
+
+.fa-envelope,
+.fa-newspaper,
+.fa-leaf,
+.fa-carrot {
+    color: white;
+}
+
+.footerinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.mail,
+.phone {
+    display: flex;
+    flex-direction: row;
+}
+
+.contactinfo p {
+    margin-left: 10px;
+}
+
+.openings ul {
+    list-style-type: none;
+    align-self: center;
+}
+
+.footerinfo h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.openings,
+.contactinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.find {
+    margin-bottom: 150px;
+}
+
+/* nyhedsbrev*/
+form {
+    font-family: merriweather;
+}
+
+.container {
+    padding: 20px;
+}
+
+input[type=text],
+input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	font-family: merriweather;
+}
+
+input[type=checkbox] {
+    margin-top: 16px;
+}
+
+input[type=submit] {
+    background-color: #DC6F0F;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+.slider {
+    height: 250px;
+}
+
+.slider img {
+    height: 250px;
+    margin: 0 25px;
+}
+
+.blog-main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-box,
+.bot-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: sp;
+    background-image: url(../images/paper.png);
+    background-repeat: no-repeat;
+    width: 70%;
+    margin-top: 60px;
+    height: auto;
+-webkit-box-shadow: 2px 2px 2px -1px rgba(0,0,0,0.79); 
+box-shadow: 2px 2px 2px -1px rgba(0,0,0,0.79);
+    height: 350px;
+
+}
+
+.box-pic {
+    width: 85%;
+    height: auto;
+    margin-top: 25px;
+}
+
+.box p {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.box h2,
+.box p {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 85%;
+    margin-top: 25px;
+}
+
+.box h2 {
+    color: #DC6F0F;
+}
+
+
+/*----------Velkommen sektion START--------------*/
+
+
+.welcome-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.welcome-text-paper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/paper.png);
+    height: 200px;
+    width: 50%;
+    background-size: cover;
+    transform: rotate(-4deg);
+    -webkit-box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.3);
+    cursor: default;
+}
+
+.welcome-text-paper h1 {
+    color: orange;
+    font-size: em;
+}
+
+.welcome-text-paper p {
+    font-size: 0.7em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.img-klaus {
+    width: auto;
+    height: 200px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: white;
+    -webkit-box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.3);
+    transform: rotate(2deg);
+}
+
+#articles h1 {
+    text-align: center;
+    color: #DC6F0F;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+/*-------------------Velkommen sektion slut------*/
+
+/*----------------------Vores sag side------------*/
+
+main h1 {
+    text-align: center;
+    color: #DC6F0F;
+    font-size: 30px;
+    margin-top: 30px; 
+}
+
+.sag-container {display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+height: auto;}
+
+.wrapper1-sag, .wrapper2-sag {
+    margin-top: 20px;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+ 
+
+.text-background {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/paper.png);
+    height: auto; 
+    width: 80%; 
+    background-size: cover;
+    -webkit-box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.3);
+    cursor: default; 
+}  
+
+.text-background h2 {
+    color: #DC6F0F; 
+    margin: 20px;
+}
+
+.text-background p {
+    color: #303030;
+    font-size: 2vh;
+    margin: 20px;
+}
+
+.rainforest-mobile {
+    width: 90%; 
+}
+
+.rainforest-desktop {
+    display: none;
+} 
+
+.sag-text-img {
+    width: 80%;
+    -webkit-box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.3);
+    cursor: default; 
+}
+
+  
+
+
+
+/*-------------------Vores sag side slut----------*/
+
+
+@media screen and (min-width: 633px) {
+
+.forside {
+    background-size: 120vh 75vh;
+    background-repeat: no-repeat;
+}
+
+.welcome-text-paper {
+    width: 20em;
+}
+
+    .rainforest-mobile {
+        display: none;
+    }    
+    
+    .rainforest-desktop {
+        display: block; 
+    }
+    
+    .rainforest-desktop, .sag-text-img {
+        width: 50%;
+    }
+    
+    .text-background {
+        width: 60%;
+    }
+    
+} 
+
+
+
+
+
+@media screen and (min-width: 750px) {
+
+    .forside {
+        background-repeat: no-repeat;
+        background-size: 150vh;
+    }
+
+
+    .navbarphone {
+        display: none;
+    }
+
+    .title {
+        display: none;
+    }
+
+
+    .navbar {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+
+
+    }
+
+    
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+        color: white;
+        width: 100%;
+        font-weight: bolder;
+
+    }
+
+    .navbar-item {
+        margin-bottom: 40px;
+        margin-top: 30px;
+        margin-right: 5%;
+
+
+    }
+
+    .navbar h1 {
+        font-size: 40px;
+        margin-top: -15px;
+        width: 100%;
+    }
+
+    .slider,
+    .category,
+    .category img {
+        display: none;
+    }
+
+    .slide {
+        display: none;
+    }
+
+    .products-main-container {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .products-container {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .products-container a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bread-background,
+    .date-background,
+    .tea-background {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-style: solid;
+        border-width: 12px;
+        border-color: white;
+        z-index: 1;
+        -webkit-box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.3);
+        box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.3);
+    }
+
+    .bread-background {
+        background-color: skyblue;
+    }
+
+    .date-background {
+        background-color: palegreen;
+    }
+
+    .tea-background {
+        background-color: palevioletred;
+    }
+
+    .product-adds-bread,
+    .product-adds-date,
+    .product-adds-tea {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        background-size: cover;
+        z-index: 2;
+    }
+
+    .product-adds-bread {
+        background-image: url(../images/bageri_detail.png);
+    }
+
+    .product-adds-date {
+        background-image: url(../images/konfekt_detail.png);
+    }
+
+    .product-adds-tea {
+        background-image: url(../images/f%C3%B8devare_detail.png);
+    }
+
+    .product-bread,
+    .product-date,
+    .product-tea {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        background-size: cover;
+        z-index: 3;
+        transition: transform .5s;
+    }
+
+    .product-bread {
+        background-image: url(../images/bageri_bread.png);
+    }
+
+    .product-date {
+        background-image: url(../images/konfekt_rawbar.png);
+    }
+
+    .product-tea {
+        background-image: url(../images/f%C3%B8devare_te.png);
+    }
+
+    .product-bread:hover,
+    .product-tea:hover,
+    .product-date:hover {
+        transform: scale(1.1);
+    }
+
+    .welcome-text-paper {
+        width: 20em; 
+    }
+
+    .top-box,
+    .bot-box {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .box {
+        width: 45%;
+        height: 50%;
+
+    }
+
+
+    .box p {
+        font-size: 0.8em;
+    }
+
+    .box p,
+    .box h2 {
+        width: 90%;
+        margin-top: 10px;
+    }
+    
+    .box h2{
+        font-size: 1.1em;
+    }
+    
+    .text-background {
+        width: 500px;
+    }
+    
+    
+}
+ 
+
+/* Produkt side */
+
+   .category-section{
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+	   	flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .category-container{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .category-section a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+@media screen and (min-width: 1066px) {
+
+    .wrapper1-sag {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .wrapper2-sag { 
+        display: flex; 
+        flex-direction: row-reverse; 
+        justify-content: space-around;
+    }
+    
+     
+    
+    
+
+    .navbar {
+        width: 100%; 
+    }
+
+    .footerinfo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 0px;
+        height: 430px;
+    }
+
+    .find {
+        margin-bottom: 0px;
+        margin-left: 2%;
+    }
+
+    .mapouter1 {
+        display: none;
+    }
+
+    .find,
+    .footerleft {
+        flex: 25%
+    }
+
+    .mail,
+    .phone {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .contactinfo {
+        flex: 35%;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .footerleft {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        line-height: 1.6;
+        margin-right: 2%;
+    }
+
+    .find h2 {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+
+    .forside {
+        background-size: 220vh 80vh;
+        background-repeat: no-repeat;
+    }
+
+    .welcome-text-paper {
+        width: 320px;
+        font-size: 20px;
+    }
+
+    .welcome-text-paper h1 {
+        margin-bottom: 10px;
+    }
+
+    .img-klaus {
+        height: 250px;
+    }
+
+    .welcome-container {
+        align-items: center;
+    }
+
+    .bread-background,
+    .date-background,
+    .tea-background {
+        width: 12vw;
+        height: 12vw;
+
+    }
+
+    .product-adds-bread,
+    .product-adds-date,
+    .product-adds-tea {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .product-bread,
+    .product-date,
+    .product-tea {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .products-main-container {
+        width: 70%;
+    }
+
+    .articles {
+        margin: auto;
+    }
+
+
+
+    .box {
+        width: 40%;
+    }
+    
+    .box-pic {
+        width: 90%;
+    }
+
+    .blog-main-container {
+        margin: auto;
+        width: 80%;
+    }
+    
+    .box h2{
+        font-size: 1.5em;
+    }
+    
+    .box p{
+        font-size: 0.9em;
+    }
+
+
+}
+
+@media screen and (min-width: 1300px) {
+    .box{
+        height: 320px;
+    }
+    .box p, .box h2{
+        height: 12%;
+    }
+    
+}
